@@ -1,2 +1,2 @@
-# Wend0rgithub.io
+# Wend0r.github.io
  
