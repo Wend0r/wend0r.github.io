@@ -4,34 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zöld Városért és Lokális Gazdaságért Mozgalom</title>
-    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #3cb371;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 5px;
+            max-width: 600px;
+        }
+
+        section h2 {
+            color: #3cb371;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            margin-bottom: 15px;
+        }
+
+        section ul {
+            margin-bottom: 15px;
+        }
+
+        section ul li {
+            list-style-type: square;
+            margin-left: 20px;
+        }
+
+        form {
+            margin-top: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #3cb371;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #32a45c;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-content p {
+            margin-bottom: 10px;
+        }
+
+        .footer-content p:last-child {
+            margin-bottom: 0;
+        }
+
+        img {
+        color: #fff;
+        text-align: center;
+        }
+
+        .img-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .img-content img {
+            border-radius: 5%;
+            width: 100px;
+            height: 500px;
+            object-fit: cover;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        }
+
+    </style>
+
 </head>
 <body>
     <header>
         <h1>Zöld Városért és Lokális Gazdaságért Mozgalom</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">Rólunk</a></li>
-                <li><a href="#projects">Projektek</a></li>
-                <li><a href="#contact">Kapcsolat</a></li>
-            </ul>
-        </nav>
     </header>
-
-    <section id="about">
-        <h2>Rólunk</h2>
-        <p>A Zöld Városért és Lokális Gazdaságért Mozgalom célja...</p>
+    <section>
+        <h2>Üdvözöljük a Zöld Városért és Lokális Gazdaságért Mozgalom weboldalán!</h2>
+        <p>Ismerje meg tevékenységeinket és csatlakozzon hozzánk a fenntartható jövőér hogy tisztán tartsuk Bánegrestt!</p>
     </section>
-
-    <section id="projects">
-        <h2>Projektek</h2>
-        <p>Jelenlegi és jövőbeli projektek...</p>
+    <div class="img-content">
+    <img src="Banegres-6.png" alt="Bánegres" style="width:auto;">
+    </div>
+    <section>
+        <h2>Tevékenységeink</h2>
+        <p>A Zöld Városért és Lokális Gazdaságért Mozgalom célja a város zöldítése és a helyi gazdaság támogatása. Ennek érdekében olyan projekteket kezdeményezünk, amelyek elősegítik a fenntartható városfejlesztést, például zöldterületek létrehozását és fenntartását, valamint a megújuló energiaforrások használatát. Emellett támogatjuk a helyi vállalkozásokat és kistermelőket, hogy erősödjön a helyi gazdaság és csökkenjen a környezeti lábnyom.</p>
+        <p>A mozgalom tevékenységei között szerepelnek közösségi kertek létrehozása, környezettudatos oktatási programok szervezése és környezetvédelmi kezdeményezések támogatása. Ezek a projektek nemcsak a városi környezetet teszik élhetőbbé és egészségesebbé, hanem hozzájárulnak a helyi gazdaság erősítéséhez is, hiszen támogatják a helyi vállalkozókat és kistermelőket.</p>
+        <p>A mozgalom hosszú távú célja a város fenntarthatóságának és gazdasági stabilitásának biztosítása, amelyhez elengedhetetlen a zöldítés és a helyi gazdaság erősítése. Ennek érdekében folyamatosan összefogást és közösségi részvételt ösztönöznek, hogy minél szélesebb körű támogatást és elkötelezettséget érjenek el a város lakói között.</p>
+       <h3>Programjaink:</h3>
+        <ul>
+            <li>Tiltakozások szervezése</li>
+            <li>Fenntarthatósági és gazdasági workshopok</li>
+            <li>Környezetvédelmi kezdeményezések támogatása</li>
+            <li>Közös túrázás a természetben</li>
+        </ul>
     </section>
-
-    <footer id="contact">
-        <h3>Kapcsolat</h3>
-        <p>Email: info@zoldvarosmozgalom.hu</p>
-        <p>Telefon: +36 1 234 5678</p>
+    <section>
+        <h2>Jelentkezzen a programunkba még ma!</h2>
+        <form id="contactForm">
+            <label for="name">Név:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">E-mail cím:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Küldés</button>
+        </form>
+    </section>
+    <footer>
+        <p>Zöld Városért és Lokális Gazdaságért Mozgalom | Telephely: Bánegres, Weöres Sándor utca 38.</p>
     </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Megakadályozza az űrlap alapértelmezett küldését
+            window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank'); // Megnyitja a YouTube URL-t egy új ablakban
+        });
+    </script>
 </body>
 </html>
